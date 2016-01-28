@@ -896,6 +896,8 @@ namespace BizHawk.Client.EmuHawk
             Speed800MenuItem.Image = (Global.Config.SpeedPercentAlternate == 800) ? Properties.Resources.FastForward : null;
             Speed1600MenuItem.Checked = Global.Config.SpeedPercent == 1600;
             Speed1600MenuItem.Image = (Global.Config.SpeedPercentAlternate == 1600) ? Properties.Resources.FastForward : null;
+            SpeedMaxMenuItem.Checked = Global.Config.SpeedPercent == 102400;
+            SpeedMaxMenuItem.Image = (Global.Config.SpeedPercentAlternate == 102400) ? Properties.Resources.FastForward : null;
             Speed200MenuItem.Checked = Global.Config.SpeedPercent == 200;
             Speed200MenuItem.Image = (Global.Config.SpeedPercentAlternate == 200) ? Properties.Resources.FastForward : null;
             Speed75MenuItem.Checked = Global.Config.SpeedPercent == 75;
@@ -911,6 +913,7 @@ namespace BizHawk.Client.EmuHawk
                 Speed400MenuItem.Enabled =
                 Speed800MenuItem.Enabled =
                 Speed1600MenuItem.Enabled =
+                SpeedMaxMenuItem.Enabled =
                 Global.Config.ClockThrottle;
 
             miUnthrottled.Checked = _unthrottled;
@@ -1136,6 +1139,7 @@ namespace BizHawk.Client.EmuHawk
         private void Speed400MenuItem_Click(object sender, EventArgs e) { ClickSpeedItem(400); }
         private void Speed800MenuItem_Click(object sender, EventArgs e) { ClickSpeedItem(800); }
         private void Speed1600MenuItem_Click(object sender, EventArgs e) { ClickSpeedItem(1600); }
+        private void SpeedMaxMenuItem_Click(object sender, EventArgs e) { ClickSpeedItem(102400); }
 
         private void BothHkAndControllerMenuItem_Click(object sender, EventArgs e)
         {

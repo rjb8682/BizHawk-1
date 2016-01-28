@@ -179,6 +179,7 @@
             this.Speed400MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Speed800MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Speed1600MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpeedMaxMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KeyPrioritySubMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.BothHkAndControllerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InputOverHkMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1541,7 +1542,8 @@
             this.Speed200MenuItem,
             this.Speed400MenuItem,
             this.Speed800MenuItem,
-            this.Speed1600MenuItem});
+            this.Speed1600MenuItem,
+            this.SpeedMaxMenuItem});
             this.SpeedSkipSubMenu.Name = "SpeedSkipSubMenu";
             this.SpeedSkipSubMenu.Size = new System.Drawing.Size(181, 22);
             this.SpeedSkipSubMenu.Text = "Speed/Skip";
@@ -1745,6 +1747,13 @@
             this.Speed1600MenuItem.Size = new System.Drawing.Size(192, 22);
             this.Speed1600MenuItem.Text = "Speed 1600%";
             this.Speed1600MenuItem.Click += new System.EventHandler(this.Speed1600MenuItem_Click);
+            // 
+            // SpeedMaxMenuItem
+            // 
+            this.SpeedMaxMenuItem.Name = "SpeedMaxMenuItem";
+            this.SpeedMaxMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.SpeedMaxMenuItem.Text = "Speed Max%";
+            this.SpeedMaxMenuItem.Click += new System.EventHandler(this.SpeedMaxMenuItem_Click);
             // 
             // KeyPrioritySubMenu
             // 
@@ -4104,6 +4113,7 @@
         private System.Windows.Forms.ToolStripMenuItem Speed400MenuItem;
         private System.Windows.Forms.ToolStripMenuItem Speed800MenuItem;
         private System.Windows.Forms.ToolStripMenuItem Speed1600MenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SpeedMaxMenuItem;
         private System.Windows.Forms.ToolStripMenuItem BasicBotMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DisplayMessagesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem C64SubMenu;
